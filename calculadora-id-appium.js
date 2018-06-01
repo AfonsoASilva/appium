@@ -24,10 +24,10 @@ function sleep (time=1000) {
 const driver = wdio.remote(opts);
 
 driver.init()		
-		.click('//android.widget.LinearLayout[@content-desc="Números e operações básicas"]/android.view.ViewGroup[1]/android.widget.Button[8]')		
+		.click('#com.google.android.calculator:id/digit_2')		
 		.element("~mais")
 		.click()
-		.element('//android.widget.LinearLayout[@content-desc="Números e operações básicas"]/android.view.ViewGroup[1]/android.widget.Button[8]')
+		.element('#com.google.android.calculator:id/digit_2')
 		.click()
 		.element("~igual")
 		.click()
